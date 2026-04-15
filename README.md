@@ -107,31 +107,35 @@ docker compose down -v
 ## structure and architecture 
 
 ```bash
-
 ├── README.md
 ├── docker-compose.yml
 ├── Dockerfile
-├── interface.py
 ├── LICENSE
-├── main.py
 ├── pyproject.toml
 ├── .dockerignore
 ├── .env.example
 ├── .python-version
-├── agent/
-│   ├── __init__.py
-│   ├── agent.py
-│   ├── history.py
-│   ├── middleware.py
-│   ├── runtime.py
-│   └── tools.py
-└── config/
-    ├── __init__.py
-    ├── google_config.py
-    ├── logging_config.py
-    ├── settings.py
-    └── tools_config.py
-
+├── .gitignore
+├── imgs/
+├── logs/
+└── src/
+    └── sheet/
+        ├── __init__.py
+        ├── main.py
+        ├── interface.py
+        ├── agent/
+        │   ├── __init__.py
+        │   ├── agent.py
+        │   ├── history.py
+        │   ├── middleware.py
+        │   ├── runtime.py
+        │   └── tools.py
+        └── config/
+            ├── __init__.py
+            ├── google_config.py
+            ├── logging_config.py
+            ├── settings.py
+            └── tools_config.py
 ```
 
 ![](imgs/architecture.svg)
