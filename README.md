@@ -42,13 +42,13 @@ this setup will give the agent full access only to **spreadsheets contained in t
 ```bash 
 uv sync
 ```
-3. make sure a Postgres Database instance is running, and run: 
+3. run the application:
 ```bash
 #new conversation
-uv run main.py 
+uv run sheet 
 
 #show past conversations and pick one to resume
-uv run main.py --resume 
+uv run sheet --resume 
 ```
 ### run using Docker:   
 1. clone the repo  
@@ -115,7 +115,6 @@ docker compose down -v
 ├── LICENSE
 ├── main.py
 ├── pyproject.toml
-├── requirements.txt
 ├── .dockerignore
 ├── .env.example
 ├── .python-version

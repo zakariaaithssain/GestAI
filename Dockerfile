@@ -2,14 +2,14 @@ FROM python:3.13-slim
 
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY . . 
 
-COPY . .
+RUN pip install uv 
+RUN uv sync
 
 RUN mkdir -p logs
 
 ENV PYTHONUNBUFFERED=1
 
-ENTRYPOINT ["python", "main.py"]
+ENTRYPOINT ["uv", "run", "sheet"]
  

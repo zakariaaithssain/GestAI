@@ -1,7 +1,7 @@
 from typing import TypedDict
 from gspread import Client
 from datetime import date
-from config.logging_config import log_tool
+from sheet.config.logging_config import log_tool
 
 import gspread
 import datetime

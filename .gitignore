@@ -4,3 +4,6 @@
 __pycache__
 *.json
 
+.vscode
+
+Sheet.egg-info

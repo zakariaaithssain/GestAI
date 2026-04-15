@@ -14,8 +14,8 @@ from rich.live import Live
 from rich.panel import Panel
 from rich import box
 
-from config.settings import Settings
-from config.tools_config import INTERRUPT_DESC
+from sheet.config.settings import Settings
+from sheet.config.tools_config import INTERRUPT_DESC
 
 
 

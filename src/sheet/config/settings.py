@@ -5,7 +5,7 @@ from rich.theme import Theme
 from rich.console import Console 
 from psycopg.rows import dict_row
 
-from config.tools_config import TOOLS, GOOGLE_CLIENT
+from sheet.config.tools_config import TOOLS, GOOGLE_CLIENT
 
 import os
 import psycopg

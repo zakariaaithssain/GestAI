@@ -1,6 +1,6 @@
-from agent.agent import Agent
-from agent.history import History
-from agent.agent import Agent
+from sheet.agent.agent import Agent
+from sheet.agent.history import History
+from sheet.agent.agent import Agent
 
 
 import logging

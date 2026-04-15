@@ -1,7 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
 [project]
 name = "Sheet"
 version = "0.1.0"
-description = "AI Assistant for Google Sheets"
+description = "AI Agent for Monthly Budget Management"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
@@ -74,3 +84,6 @@ dependencies = [
     "urllib3==2.5.0",
     "wcwidth==0.2.14",
 ]
+
+[project.scripts]
+sheet = "sheet.main:main"

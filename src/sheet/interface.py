@@ -2,8 +2,8 @@ from rich.panel import Panel
 from rich.text import Text
 from rich import box
 
-from agent.runtime import AgentRuntime
-from config.settings import Settings
+from sheet.agent.runtime import AgentRuntime
+from sheet.config.settings import Settings
 
 import logging 
 import datetime

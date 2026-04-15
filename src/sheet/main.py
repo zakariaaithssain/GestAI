@@ -17,9 +17,11 @@ warnings.filterwarnings(
 #we should load env before importing files (calling main())
 logger = logging.getLogger("main")
 logger.info("loading env...")
-env_path = Path(".env")
+
+#look for .env in the project root (two levels up from this file)
+env_path = Path(__file__).parent.parent.parent / ".env"
 if not env_path.exists():
-    raise FileNotFoundError(f".env file not found at {env_path}")
+    raise FileNotFoundError(f".env file not found at {env_path}. Please create a .env file in the project root.")
 load_dotenv(dotenv_path=env_path, override=True)
 
 
@@ -32,12 +34,12 @@ parser.add_argument("--resume", action="store_true", help="resume a previous con
 
 def main(resume: bool = False):
 
-    from config.settings import Settings
-    from config.logging_config import setup_logging
-    from agent.runtime import AgentRuntime
-    from agent.history import History
-    from agent.agent import Agent
-    from interface import Interface
+    from sheet.config.settings import Settings
+    from sheet.config.logging_config import setup_logging
+    from sheet.agent.runtime import AgentRuntime
+    from sheet.agent.history import History
+    from sheet.agent.agent import Agent
+    from sheet.interface import Interface
 
     import os
     import ulid 

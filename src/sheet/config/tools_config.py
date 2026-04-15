@@ -1,7 +1,7 @@
 
-from config.google_config import GOOGLE_CLIENT
+from sheet.config.google_config import GOOGLE_CLIENT
 
-from agent.tools import ToolKit
+from sheet.agent.tools import ToolKit
 
 from langchain.tools import tool
 from rich.console import Console

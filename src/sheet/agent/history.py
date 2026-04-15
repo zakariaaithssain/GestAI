@@ -4,7 +4,7 @@ import inquirer
 from datetime import datetime
 from rich.markdown import Markdown
 
-from config.settings import Settings
+from sheet.config.settings import Settings
 
 
 
